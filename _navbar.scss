@@ -1,0 +1,38 @@
+@import "./colours";
+@import "./background";
+
+.navbar {
+    width: 90%;
+}
+
+.navbar p {
+    float: left;
+}
+
+ul {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    
+    li {
+        list-style: none;
+    }
+}
+
+.navbar {
+    &__links {
+        padding: 10px;
+        height: auto;
+        font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+        &--get-in-touch {
+            border: 1px black solid;
+            border-radius: 10px;
+            background-color: white;
+        }
+    }
+
+    &__title {
+        font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+        padding-left: 40px;
+    }
+}

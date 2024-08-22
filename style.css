@@ -1,0 +1,325 @@
+body {
+  background-color: #f2f1f0;
+}
+
+.navbar {
+  width: 90%;
+}
+
+.navbar p {
+  float: left;
+}
+
+ul {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+ul li {
+  list-style: none;
+}
+
+.navbar__links {
+  padding: 10px;
+  height: auto;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+.navbar__links--get-in-touch {
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: white;
+}
+.navbar__title {
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+  padding-left: 40px;
+}
+
+body {
+  background-color: #f2f1f0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+.heading-section-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: right;
+}
+.heading-section-container__text {
+  flex-direction: column;
+  font-family: "Orbitron", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+.heading-section-container__title {
+  padding-bottom: 6%;
+}
+
+.headingsectiion-constainer__image {
+  border: 7px solid black;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  width: 300px;
+  height: auto;
+}
+
+.project-card-container {
+  justify-content: center;
+  align-items: center;
+  size: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aboutMeContainer {
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+  font-size: 1.2em;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 20px;
+  width: 100%;
+}
+.aboutMeContainer .about {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.aboutMeContainer .about .about__item {
+  display: flex;
+  flex-direction: column;
+  border: 7px solid black;
+  width: 400px;
+  height: 450px;
+  font-size: 18px;
+}
+.aboutMeContainer__image {
+  border: 10px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 450px;
+}
+.aboutMeContainer .aboutMeContainer__About {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#my-Description-container {
+  display: flex;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+  font-size: 1.5em;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: center;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+
+.footer {
+  background-color: white;
+  color: black;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+
+.projects_section {
+  width: 90%;
+  justify-content: center;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: grid;
+  size: 50px;
+  padding: 20px;
+  width: 600px;
+  text-align: center;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+.project-card button {
+  background: rgb(182, 182, 182);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+.project-card button a {
+  color: white;
+  text-decoration: none;
+}
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/*
+html,
+body {
+    height: 100%;
+    margin: 0;
+}*/
+.content {
+  flex: 1;
+}
+
+footer {
+  width: 90%;
+  background-color: grey;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  gap: 20px;
+  margin-top: auto;
+  padding: 30px;
+}
+
+footer p {
+  margin: 0;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+footer img {
+  height: 30px;
+  width: auto;
+}
+
+.Portfolioo {
+  font-size: 35px;
+  margin-bottom: 70px;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+  text-align: center;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  padding: 15px;
+  width: 72px;
+  height: 72px;
+  text-align: center;
+}
+
+#skills {
+  border: 7px solid black;
+  padding-top: 90px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 70px;
+  font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+
+.skillsContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    gap: 3px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: auto;
+  }
+  .heading-section-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .heading-section-container__text {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .heading-section-container__title {
+    margin-top: 20px;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+  .aboutMeContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .aboutMeContainer .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutMeContainer__image {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #skills {
+    width: 90%;
+    text-align: center;
+    font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+    font-size: 1.5em;
+  }
+  .project-card-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0;
+  }
+  footer {
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    text-align: center;
+  }
+  .Portfolioo {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

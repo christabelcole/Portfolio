@@ -1,0 +1,346 @@
+@import "./navbar";
+@import "./colours";
+@import "./background";
+@import "./projectcard";
+
+@mixin align-left {
+    text-align: left;
+}
+
+@mixin align-centre {
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+@mixin align-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.heading-section-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+
+    &__text {
+        flex-direction: column;
+        font-family: "Orbitron", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+    }
+    &__title {
+        padding-bottom: 6%;
+    }
+}
+
+.headingsectiion-constainer__image {
+    border: 7px solid black ;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 300px;
+    height: auto;
+}
+
+.project-card-container {
+  justify-content: center;
+  align-items: center;
+    size: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.aboutMeContainer {
+    font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+    font-size: 1.2em;
+    color: $primary-colour;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px; // Space between the image and text (adjust as needed)
+    padding: 20px; // Optional: Add padding to the container
+    width: 100%;
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+
+        .about__item {
+            display: flex;
+            flex-direction: column;
+            border: 7px solid black;
+            width: 400px;
+            height: 450px;
+            font-size: 18px;
+        }
+    }
+
+    &__image {
+        border: 10px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 450px;
+       
+    }
+
+    .aboutMeContainer__About {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        // use margin to create
+        //gap: 190px;
+    }
+}
+
+// img{
+
+//     width: 600px;
+//     height: 600px;
+//     // top: 1027px;
+//     // left: 135px;
+//     opacity: 0px;
+
+//       border-radius: 10%;
+
+// }
+#my-Description-container {
+    display: flex;
+    font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+    font-size: 1.5em;
+    align-items: center;
+    gap: 20px;
+    @include align-right;
+    text-align: center;
+    font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+
+.footer {
+    background-color: white;
+    color: $primary-colour;
+    font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+
+.projects_section {
+    width: 90%;
+    justify-content: center;
+}
+
+.project-card {
+    background: $card-bg-color;
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    display: grid;
+    size: 50px;
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+
+    button {
+
+        background: $button-bg-color;
+        border: none;
+        border-radius: 4px;
+        color: $button-text-color;
+        cursor: pointer; // Pointer cursor on hover
+        display: inline-block; // Align buttons next to each other
+        margin: 10px; // Space between buttons
+        padding: $button-padding; // Padding inside the button
+        font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+        a {
+            color: $button-text-color; // Text color for links inside buttons
+            text-decoration: none; // Remove underline from links
+        }
+    }
+
+    // Optional: Style for images inside project cards
+    img {
+        max-width: 100%; // Ensure images fit within the card
+        height: auto; // Maintain aspect ratio
+        border-radius: $card-border-radius; // Rounded corners for images
+    }
+}
+/*
+html,
+body {
+    height: 100%;
+    margin: 0;
+}*/
+
+// body {
+//    // display: flex;
+//     //flex-direction: column;
+// }
+
+.content {
+    flex: 1; // Allow content to grow and push footer to the bottom
+}
+
+footer {
+    width: 90%;
+    background-color: grey;
+    color: $primary-colour;
+    display: flex; // Flexbox layout
+    align-items: center; // Center content vertically
+    justify-content: center; // Center content horizontally
+    box-sizing: border-box; // Include padding and border in the element's total width and height
+    text-align: center; // Center text horizontally
+    gap: 20px; // Gap between items
+    margin-top: auto;
+    padding: 30px;
+}
+footer p {
+    margin: 0;
+    font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif; // Remove default margin from the paragraph
+}
+
+footer a {
+    margin: 0 10px; // Margin between image links
+}
+
+footer img {
+    height: 30px; // Set a reasonable height for the images
+    width: auto; // Maintain aspect ratio
+}
+
+.Portfolioo {
+    font-size: 35px;
+    margin-bottom: 70px;
+    font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+    text-align: center;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 15px;
+    width: 72px;
+    height: 72px;
+
+    text-align: center;
+}
+#skills {
+    border: 7px solid black;
+    padding-top: 90px;
+    margin-bottom: 40px;
+text-align: center ;
+font-size: 22px;
+padding-bottom: 70px;
+font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+}
+
+
+.skillsContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+// Phone view (Portrait and Landscape, max-width: 767px)
+@media only screen and (max-width: 767px) {
+    .skillsContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 90%;
+        gap: 3px;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+        margin: auto;
+    }
+
+    .heading-section-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+
+        &__text {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+
+        &__title {
+            margin-top: 20px;
+            padding-bottom: 5%;
+            text-align: center;
+        }
+    }
+
+    .aboutMeContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        text-align: center;
+
+        .about {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__image {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+
+    #skills {
+        width: 90%;
+        text-align: center;
+
+        font-family: "Jersey 10", "Roboto", "Roboto Condensed", "Roboto Slab", sans-serif;
+        font-size: 1.5em;
+    }
+
+    .project-card-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .Portfolioo {
+        text-align: center;
+    }
+}
